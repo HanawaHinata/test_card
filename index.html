@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>Test Card (vue ver.)</title>
+<!--    <script src="https://cdn.jsdelivr.net/npm/vue"></script>-->
+    <link rel="stylesheet" href="page.css">
+</head>
+<body>
+
+<div class="main_content">
+    <!-- 渲染大圆 -->
+    <div class="big_circle"></div>
+    <!-- 渲染格子 div -->
+    <div class="boxes">
+        <!-- 第一行，包含两个颜色框和 8 个普通框 -->
+        <div class="one_line">
+            <div class="item_two_box left_border no_right_border">
+                <!-- RGB -->
+                <div class="color_item" style="background: #bcb400"></div>
+                <div class="color_item" style="background: #00a9bc"></div>
+                <div class="color_item" style="background: #0008c2"></div>
+                <div class="color_item" style="background: #d01000"></div>
+                <div class="color_item" style="background: #cb1cc2"></div>
+                <div class="color_item" style="background: #00a100"></div>
+                <div class="color_item" style="background: #d00f00"></div>
+                <div class="color_item" style="background: #00aabe"></div>
+                <!-- 灰度 -->
+                <div class="color_item" style="background: #312f30" ></div>
+                <div class="color_item" style="background: #626462" ></div>
+                <div class="color_item" style="background: #939595" ></div>
+                <div class="color_item" style="background: #c0c1c8" ></div>
+            </div>
+            <div class="item no_left_border"></div>
+            <div class="item"></div>
+            <div class="item"><p>300</p></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"><p>400</p></div>
+            <div class="item"></div>
+            <div class="item no_right_border"></div>
+            <div class="item_two_box no_left_border">
+                <!-- RGB -->
+                <div class="color_item" style="background: #cf1001"></div>
+                <div class="color_item" style="background: #009f00"></div>
+                <div class="color_item" style="background: #000abe"></div>
+                <div class="color_item" style="background: #00aabb"></div>
+                <div class="color_item" style="background: #009f00"></div>
+                <div class="color_item" style="background: #cb1cbf"></div>
+                <div class="color_item" style="background: #b8b503"></div>
+                <div class="color_item" style="background: #c91cc6"></div>
+                <!-- 灰度 -->
+                <div class="color_item" style="background: #c0cdc5" ></div>
+                <div class="color_item" style="background: #979699" ></div>
+                <div class="color_item" style="background: #64645b" ></div>
+                <div class="color_item" style="background: #2f2f2f" ></div>
+            </div>
+        </div>
+
+        <!-- 第二行，包含 6 个分辨率识别框和 1 个 CCTV 台标 -->
+        <div class="one_line no_top_border">
+            <div class="item left_border"></div>
+            <div class="item" style="background: #ffffff"></div>
+            <div class="item"></div>
+            <div class="item" style="background: #ffffff"></div>
+            <div class="item" style="background: #ffffff"></div>
+
+            <div class="item_two_box">
+                <p>CCTV</p>
+            </div>
+
+            <div class="item" style="background: #ffffff"></div>
+            <div class="item" style="background: #ffffff"></div>
+            <div class="item"></div>
+            <div class="item" style="background: #ffffff"></div>
+            <div class="item"></div>
+        </div>
+
+        <!-- 第三行，包含 2 个彩色喇叭和数个数据显示框 -->
+        <div class="one_line no_top_border">
+            <div class="item left_border">
+                <span class="top_text">TVL</span>
+                <span class="bottom_text">100</span>
+            </div>
+            <div class="item">
+                <span class="top_text dark_text">3.58</span>
+            </div>
+            <div class="item"></div>
+            <div class="item">
+                <div class="small_speaker blue_small_speaker">
+                    <div class="center"></div>
+                </div>
+            </div>
+
+            <div class="item_four_box"></div>
+
+            <div class="item">
+                <div class="small_speaker red_small_speaker">
+                    <div class="center"></div>
+                </div>
+            </div>
+            <div class="item">
+                <span class="top_text dark_text">MHz</span>
+            </div>
+            <div class="item">
+                <span class="top_text dark_text">4.43</span>
+            </div>
+            <div class="item"></div>
+        </div>
+
+        <!-- 第四、五、六行，合并为一行 -->
+        <div class="three_line">
+            <div class="row">
+                <div class="item" style="background: #ffffff;"></div>
+                <div class="item"></div>
+                <div class="item" style="background: #ffffff;">
+                    <div style="width: 5px;height: 70px;position: absolute;top: 25px;left: 20px;background: #000000;"></div>
+                    <div style="width: 5px;height: 70px;position: absolute;top: 25px;right: 20px;background: #000000;"></div>
+                </div>
+                <div class="item"></div>
+
+                <div class="item" style="background: #ffffff;"></div>
+                <div class="item"></div>
+                <div class="item" style="background: #585858"></div>
+                <div class="item" style="background: #000000">
+                    <div style="width: 100px;height: 2px;margin: 56.5px auto;background: #ffffff;transform: rotate(15deg)"></div>
+                </div>
+
+                <div class="item" style="background: #ffffff;"></div>
+                <div class="item"></div>
+                <div class="item" style="background: #000000">
+                    <div style="width: 5px;height: 70px;position: absolute;top: 25px;left: 20px;background: #ffffff;"></div>
+                    <div style="width: 5px;height: 70px;position: absolute;top: 25px;right: 20px;background: #ffffff;"></div>
+                </div>
+                <div class="item"></div>
+            </div>
+            <div class="row">
+                <div class="speaker_box"></div>
+            </div>
+            <div class="row">
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item">
+                    <span>3</span>
+                </div>
+                <div class="item" style="background: #000000">
+                    <div style="width: 5px;height: 110px;margin: 2.5px auto;background: #ffffff;"></div>
+                </div>
+
+                <div class="item" style="background: #000000">
+                    <div style="width: 5px;height: 70px;position: absolute;top: 22.5px;left: 55px;background: #ffffff;"></div>
+                    <div style="width: 70px;height: 5px;position: absolute;top: 55px;right: 20px;background: #ffffff;"></div>
+                </div>
+                <div class="item"></div>
+                <div class="item">
+                    <span>4</span>
+                </div>
+                <div class="item" style="background: #ffffff">
+                    <div style="width: 5px;height: 110px;margin: 2.5px auto;background: #000000;"></div>
+                </div>
+
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item">
+                    <span>5</span>
+                </div>
+                <div class="item" style="background: #303030">
+                    <div style="width: 5px;height: 110px;margin: 2.5px auto;background: #ffffff;"></div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 第七行，包含 2 个数据显示框和多个色彩框 -->
+        <div class="one_line">
+            <div class="item">
+                <span class="top_text">300</span>
+            </div>
+            <div class="item">
+                <span class="bottom_text dark_text">4.28</span>
+            </div>
+            <div class="item"></div>
+            <div class="item no_right_border" style="background: #bdb300"></div>
+            <div class="item no_right_border no_left_border" style="background: #00abbd"></div>
+            <div class="item no_right_border no_left_border" style="background: #00a000"></div>
+            <div class="item no_right_border no_left_border" style="background: #c91dbf"></div>
+            <div class="item no_right_border no_left_border" style="background: #cd1100"></div>
+            <div class="item no_left_border" style="background: #0009c4"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+        </div>
+
+        <!-- 第八行，包含 2 个数据显示框和多个色彩框 -->
+        <div class="one_line">
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+
+            <div class="item_six_box">
+                <p>Beijing&nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp;China</p>
+            </div>
+
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+        </div>
+
+        <!-- 第九行，包含 2 个数据显示框和多个色彩框 -->
+        <div class="one_line">
+            <div class="item_three_box">
+                <div class="color_box">
+                    <div class="item" style="background:#590c52"></div>
+                    <div class="item" style="background: #b219a9"></div>
+                    <div class="item" style="background: #ff26ff"></div>
+                </div>
+            </div>
+
+            <div class="item"></div>
+            <div class="item" style="background: #7d7d7d;">
+                <span class="bottom_text dark_text">1.0</span>
+            </div>
+            <div class="item_two_box">
+                <span class="bottom_text dark_text">0.5</span>
+            </div>
+            <div class="item" style="background: #7d7d7d;">
+                <span class="bottom_text dark_text">1.5</span>
+            </div>
+            <div class="item"></div>
+
+            <div class="item_three_box">
+                <div class="color_box" style="position: absolute;right: 0">
+                    <div class="item" style="background: #ff1900"></div>
+                    <div class="item" style="background: #ff1900"></div>
+                    <div class="item" style="background: #ff1900"></div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+    </div>
+
+
+
+    <!-- 渲染覆盖元素 使用 position:absolute 浮动在格子 div 的上方 -->
+    <div class="absolute_contents">
+
+        <div class="top_dot"></div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
