@@ -1,0 +1,280 @@
+@font-face {
+    font-family: arlrdbd;
+    src: url("ARLRDBD.TTF");
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arlrdbd, serif;
+}
+
+body{
+    background: #000000;
+}
+
+
+.main_content{
+    background: #7d7d7d;
+    width: 1397px;
+    height: 1080px;
+    margin: 0 auto;
+    position: relative;
+    border: 2.5px solid #000000;
+}
+
+.big_circle{
+    width: 1075px;
+    height: 1075px;
+    border: 5px solid #000000;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 0;
+    left: 158.5px;
+}
+
+.boxes{
+    min-width: 100%;
+    position: absolute;
+    z-index: 1;
+}
+
+.boxes .one_line{
+    height: 120px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.boxes .one_line .item{
+    height: 100%;
+    width: 116px;
+    float: left;
+    border: 2.5px solid #000000;
+    position: relative;
+}
+
+.boxes .one_line .item_two_box{
+    height: 100%;
+    width: 232px;
+    float: left;
+    border: 2.5px solid #000000;
+    flex-wrap: wrap;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+
+.boxes .one_line .item_three_box{
+    height: 100%;
+    width: 348px;
+    float: left;
+    border: 2.5px solid #000000;
+    flex-wrap: wrap;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+
+.boxes .one_line .item_four_box{
+    height: 100%;
+    width: 464px;
+    float: left;
+    border: 2.5px solid #000000;
+    flex-wrap: wrap;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+
+.boxes .one_line .item_six_box{
+    height: 100%;
+    width: 696px;
+    float: left;
+    border: 2.5px solid #000000;
+    flex-wrap: wrap;
+    display: flex;
+    overflow: hidden;
+    background: #7d7d7d;
+    position: relative;
+}
+
+.boxes .one_line .item p{
+    color: #ffffff;
+    text-align: center;
+    font-size: 20pt;
+    margin-top: 60px;
+}
+
+.boxes .one_line .item span{
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    font-size: 20pt;
+    line-height: 100%;
+    padding-top: 7px;
+}
+
+.boxes .one_line .item_two_box span{
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    font-size: 20pt;
+    line-height: 100%;
+    padding-top: 7px;
+}
+
+.dark_text{
+    color: #000000 !important;
+}
+
+.bottom_text{
+    position: absolute;
+    bottom: 15px;
+}
+
+
+.boxes .item_two_box p{
+    width: 100%;
+    line-height: 120px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 40pt;
+}
+
+
+.item_two_box .color_item{
+    min-width: 25%;
+    flex:1;
+    height: 45px;
+}
+
+
+.item_three_box .color_box{
+    width: 80%;
+    margin: 20px;
+    height: 75px;
+    display: flex;
+}
+
+.item_three_box .color_box .item{
+    flex:1;
+    border: none;
+}
+
+
+.item_six_box p{
+    width: 100%;
+    line-height: 120px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 40pt;
+}
+
+.small_speaker{
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 17.5px auto;
+}
+
+.small_speaker .center{
+    width: 20px;
+    height: 20px;
+    margin: 20px auto;
+    border-radius: 50%;
+}
+
+.blue_small_speaker{
+    background: #1b11ca;
+    border: 10px solid #a6a724;
+    box-shadow: 0 0 10px 0 rgba(27,17,202,1) ;
+}
+
+.blue_small_speaker .center{
+    background: #a6a724;
+}
+
+.red_small_speaker{
+    background: #019eaf;
+    border: 10px solid #9d2a20;
+    box-shadow: 0 0 10px 0 rgba(1,158,175,1) ;
+}
+
+.red_small_speaker .center{
+    background: #9d2a20;
+}
+
+
+
+
+.boxes .three_line{
+    height: 360px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.boxes .three_line .row{
+    width: 464px;
+    float: left;
+    height: 100%;
+}
+
+.boxes .three_line .row .item{
+    width: 116px;
+    height: 120px;
+    float: left;
+    flex:1;
+    border: 2.5px solid #000000;
+    position: relative;
+}
+
+.boxes .three_line .row .item span{
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    font-size: 18pt;
+}
+
+
+.boxes .three_line .row .speaker_box{
+    width: 100%;
+    height: 100%;
+    border: 2.5px solid #000000;
+    position: relative;
+}
+
+.top_dot{
+    position: absolute;
+    top: 20px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: radial-gradient(circle farthest-side at center ,#ffffff,#000000);
+}
+
+
+
+.left_border{
+    border-left: 5px solid #000000;
+}
+
+.no_left_border{
+    border-left: none !important;
+}
+
+.no_right_border{
+    border-right: none !important;
+}
+
+.no_top_border{
+    border-top: none !important;
+}
+
+.no_bottom_border{
+    border-bottom: none !important;
+}
